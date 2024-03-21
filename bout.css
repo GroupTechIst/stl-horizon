@@ -1,0 +1,296 @@
+.bar {
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.bar a {
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    color: black;
+    padding: 10px;
+}
+
+.bar .pic {
+    margin-left: 200px;
+    padding-right: 400px;
+}
+
+.drop {
+    float: left;
+    overflow: hidden;
+}
+
+.drop .ton {
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background-color: inherit;
+    color: black;
+    font-weight: bolder;
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+.bar a:hover,
+.drop:hover,
+.ton {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.content a {
+    float: none;
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.content a:hover {
+    background-color: blue;
+}
+
+.drop:hover .content {
+    display: block;
+}
+
+.demo {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+/*top card*/
+
+.one {
+    background-color: rgb(218, 230, 233);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 400px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.one .part {
+    margin-right: 50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+}
+
+section {
+    text-align: center;
+    font-weight: 30px;
+    padding-top: 100px;
+}
+
+section h2 {
+    font-weight: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 50px;
+}
+
+section p {
+    color: rgb(158, 191, 199);
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#up {
+    font-weight: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*second card*/
+
+.two {
+    background-color: rgb(218, 230, 233);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: center;
+}
+
+.two .grow {
+    margin: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.two .grow h1 {
+    padding-bottom: 30px;
+    font-size: large;
+    font-weight: 50px;
+}
+
+.two .grow p {
+    padding-bottom: 50px;
+}
+
+.two .get {
+    margin: 20px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+}
+
+.two .get h1 {
+    padding-bottom: 30px;
+    font-size: large;
+    font-weight: 50px;
+}
+
+.two .get p {
+    padding-bottom: 40px;
+}
+
+
+/*third csrd*/
+
+.in {
+    background-color: rgb(218, 230, 233);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.in .rall .lap {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    margin-right: 200px;
+    font-size: large;
+}
+
+.in .try {
+    align-items: center;
+    font-size: large;
+    padding-top: 200px;
+    letter-spacing: 1px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.in .try h3 {
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.in .try p {
+    color: rgb(123, 141, 141);
+}
+
+.in .try button {
+    background-color: red;
+    padding: 20px;
+    font-size: medium;
+    letter-spacing: 1px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 50px;
+}
+
+
+/*last card*/
+
+.last {
+    text-align: center;
+    background-color: rgb(218, 230, 233);
+    border-radius: 40px;
+    margin-left: 220px;
+    margin-top: 59px;
+    margin-right: 220px;
+    height: 300px;
+    padding-top: 100px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.last span {
+    color: red;
+}
+
+.last p {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.last button {
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+/*footer*/
+
+.foot {
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.foot .ter {
+    padding: 20px;
+    margin-right: 300px;
+    text-align: center;
+}
+
+.foot .ter button {
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 0px 0px;
+    height: 50px;
+    width: 100px;
+}
+
+.foot .ters table tr td {
+    padding: 10px;
+}
