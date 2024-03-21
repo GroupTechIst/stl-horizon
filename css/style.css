@@ -1,0 +1,494 @@
+body{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: none;
+    background-color:  rgba(249,250,252,255);;
+}
+
+/* -----------HEADER CSS---------------------------------- */
+
+.kichwa{
+    display: flex;
+    width: 100%;
+    margin: none;
+    background-color: white;
+    align-items: last baseline;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.logo{
+    display: inline-block;
+    width: 12%;
+    margin-right: 20%;
+    margin-left: 10%;
+}
+
+.menu{
+    display: inline-block;
+    width: 40%;
+}
+
+.back-grnd{
+    display: block;
+    border: none;
+    border-color: black;
+    padding: none;
+    background-image: url(/img/hd-back5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hd-lnk{
+    text-decoration-line: none;
+    color: none;
+    width: 20%;
+    padding: none;
+    margin: none;
+}
+
+.hd-btn{
+    border: none;
+    color: red;
+    background-color: transparent;
+    height: 100px;
+    font-size: 15px;
+    
+}
+.hd1-btn{
+    background-color: rgb(255, 37, 37); 
+    color: white;
+    height: 50px; 
+    border-radius: 5px; 
+    width: 130px;
+    border: none;
+    font-size: 15px;
+    transition: scale(1);
+    transition: transform 0.2s;
+    
+}
+
+.hd1-btn:hover
+  {
+    transform: scale(0.8);
+  }
+
+
+.hd-img{
+    display: inline-block;
+    align-self: center;
+    padding-right: 30%;
+}
+
+.hd-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    padding: none;
+    margin: none;
+    border: none;
+  }
+
+  .hd-drop-btn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    
+  }
+
+.hd-drop{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.hd-drop a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+
+}
+
+/* Change color of dropdown links on hover */
+.hd-drop a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.hd-dropdown:hover .hd-drop {display: block;}
+
+@media (max-width: 1023px){
+    .body{
+        width: fit-content;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kichwa{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .request-btn{
+        display: none;
+    }
+    .logo{
+        margin: none;
+        width: 30%;
+    }
+    .menu{
+        display: none;
+    }
+
+}
+
+/* ----------------MIDDLE SECTION CSS------------------- */
+
+.connect{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(249,250,252,255);
+    padding-top: 10%;
+    padding-bottom: 1.75%;
+}
+
+.main-sec{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(249,250,252,255);
+    width: 100%;
+}
+
+.map{
+    display: inline-block;
+    width: 45%;
+    margin-left: 10%;
+}
+
+.form{
+    display: inline-block;
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 10%;
+    padding: 5%;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+}
+
+input{
+    height: 25px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+}
+.fname{
+    width: 50%;
+}
+
+.lists{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.prod{
+    margin: 2%;
+}
+.country{
+    margin: 2%;
+}
+.sel-country{
+    width: 80%;
+
+}
+
+
+.submit{
+    background-color: rgb(255, 37, 37); 
+    color: white;
+    height: 50px; 
+    border-radius: 5px; 
+    width: 130px;
+    border: none;
+    font-size: 15px;
+    transition: scale(1);
+    transition: transform 0.2s;
+}
+.submit:hover{
+    background-color: rgba(255, 37, 37, 0.5);
+}
+
+@media (max-width: 1023px){
+        .connect{
+            margin-top: 20%;
+            font-size: 70%;
+        }
+        .main-sec{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+        }
+        .map{
+            display: inline-block;
+            width: 102%;
+            height: 325px;
+            margin-left: 3%;
+            margin-bottom: 4%;
+            border-radius: 10px;
+           
+        }
+        .form{
+            display: inline-block;
+            width: 90%;
+            padding: none;
+            margin-left: 3%;
+            
+        }
+        input{
+            width: 90%;
+        }
+        
+        .lists{
+            flex-direction: column;
+            width: 90%;
+            padding: 5%;
+        }
+        .prod{
+            width: 92%;
+            margin-bottom: 5px;
+        }
+        .sel-country{
+            width: 99%;
+
+        }
+
+        
+}
+
+/*--------------- CARDS------------------------------- CSS */
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(249,250,252,255);
+    width: 100%;
+    padding-top: 5%;
+}
+
+.small-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 15%;
+    padding: 1.5%;
+    margin: 3%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+
+}
+
+.img-card{
+    border-radius: 60%;
+    width: 20%;
+}
+
+@media (max-width: 1023px){
+    .cards{
+        flex-wrap: wrap;
+    }
+    .small-card{
+        width: 90%;
+    }
+
+}
+
+/*------------------ READY CSS ------------------------*/
+.ready{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 212, 214);
+    color: rgb(63, 62, 62);
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.ready-btn{
+    background-color: red;
+    color: white;
+    height: 45px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    transition: scale(1);
+    transition: transform 0.2s ;
+
+}
+.ready-btn:hover{
+    transform: scale(0.8);
+}
+
+@media (max-width: 1023px){
+    .ready{
+        font-size: 50%;
+        padding: 10%;
+    }
+
+}
+
+
+
+
+/* FOOTER CSS */
+
+footer{
+    display: block;
+    background-color: rgb(59, 57, 58);
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.ft-top{
+    display: flex;
+    margin-bottom: 4.5%;
+}
+.ft-rgt{
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 30%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-width: 0.5px;
+
+}
+
+.app-btn{
+    width: 40%;
+    border: none;
+    height: 70px;
+    text-align:justify;
+    color: rgb(206, 206, 206);
+    background-color: rgb(59, 57, 58);
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.app-btn:hover{
+    cursor: pointer;
+}
+
+.ft-lft{
+    display: flex;
+    width: 70%;
+    margin-top: 5%;
+}
+
+ul{
+    display: inline-block;
+    margin: 5%;
+    color: gray;
+}
+.ft-border{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: solid;
+    border-width: 0.25px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    align-items: center;
+}
+.ft-p{
+    margin-right: 28%;
+    color: rgb(212, 212, 214);
+}
+.icons{
+    border-radius: 5px;
+    height: 20px;
+    margin: 1%;
+}
+.ft-icons{
+    display: inline-flex;
+}
+
+ul a{
+    text-decoration: none;
+    color: gray;
+    
+}
+
+@media (max-width: 1023px){
+    footer{
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ft-top{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .ft-rgt{
+        display: inline-block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+    }
+    .app-btn{
+        width: 90%;
+    }
+    .ft-lft{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ft-border{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .ft-p{
+        width: 100%;
+        margin-left: 10%;
+        margin-right: none;
+    }
+    .ft-icons{
+        display: flex;
+    }
+    
+
+}
