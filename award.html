@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        width: 100%;
+      margin: 0;
+      padding: 0;
+
+        .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    
+}
+#home{
+    padding: 10px 5%; 
+            width: 100%;
+            height: 100vh;
+ 
+}
+.nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      font-family:"Space Grotesk", sans-serif;
+    }
+ul{
+    list-style: none;
+
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+  
+ul li a:hover {
+    color: red; 
+    font-weight: bold; 
+    transition: color 0.2s ease; 
+}
+.dropdown {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+    display: none;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+/* Show the dropdown on hover */
+ul li:hover .dropdown {
+    display: block;
+}
+ul li ul.dropdown li a{
+  color: black;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    background-color: #fff;
+    width: 250px;
+    border-radius: 10px;
+}
+.logo{
+    width: 200px;
+}
+.demmo{
+    background-color: red;
+    color: #fff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+} 
+.header{
+    text-align: center;  
+}
+.header-p{
+    color: rgb(123, 136, 168);
+}
+
+    .trophy-image {
+      max-width: 100%;
+      height: auto;
+       align-items:flex-start;
+    }
+
+    .position-relative {
+    padding: 0;
+    }
+
+  
+
+  .button {
+    background-color: rgb(123, 136, 168);
+        border-radius: 30px;
+        width: 70%; /* Adjusted width to fit the screen */
+        padding: 50px;
+        margin: 0 auto;
+
+}
+
+  .bottom {
+    background-color: rgb(123, 136, 168);
+    border-radius: 50px;
+    width: 80%; 
+    padding: 80px;
+    margin: 0 auto; 
+}
+
+/* FOOTER CSS */
+
+footer {
+    width: 100%;
+        background-color: rgb(59, 57, 58);
+        color: whitesmoke;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        padding: 0;
+        margin: 0;
+   
+}
+
+.ft-top {
+    display: flex;
+    margin-bottom: 4.5%;
+}
+
+.ft-rgt {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 30%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-width: 0.5px;
+}
+
+.app-btn {
+    width: 40%;
+    border: none;
+    height: 70px;
+    text-align: justify;
+    color: rgb(206, 206, 206);
+    background-color: rgb(59, 57, 58);
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.app-btn:hover {
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    background-color: rgb(59, 57, 58);
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.ft-lft {
+    display: flex;
+    width: 70%;
+    margin-top: 5%;
+}
+
+
+ul {
+    display: inline-block;
+    margin: 5%;
+    color: gray;
+}
+
+.ft-border {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: solid;
+    border-width: 0.25px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    align-items: center;
+}
+
+.ft-p {
+    margin-right: 28%;
+    color: rgb(212, 212, 214);
+}
+
+.icons {
+    border-radius: 5px;
+    height: 20px;
+    margin: 1%;
+}
+
+.ft-icons {
+    display: inline-flex;
+}
+
+ul a {
+    text-decoration: none;
+    color: gray;
+}
+</style>
+<body>
+    <!--------home section -->
+ <div id="home">
+    <div class="container">
+        <div class="header">
+            <nav>
+                <img class="logo" src="gimages/logo (1).JPG" alt="">
+                <ul>
+                    <li><a style="color: red;" href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a>
+                        <!-- Dropdown Menu for Awards Section -->
+                        <ul class="dropdown">
+                            <li><a href="us.html">About us</a></li>
+                            <li><a href="about.html">Awards</a></li>
+                           
+                        </ul>
+                    <li>
+                        <a href="#">Our products</a>
+                        <ul class="dropdown">
+                            <li><a href="products.html">Managing people</a></li>
+                            <li><a href="products.html">Managing resources</a></li>
+                            <li><a href="products.html">Managing </a></li>
+                            <li><a href="products.html">Governance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="demmo" href="#">Request Demo</a></li>
+                </ul>
+            </nav>
+
+  <!-- stl industry -->
+    <div class="header text-wrap text-center">
+    <h1>STL Industrial Awards</h1>
+    <p style="color: rgb(123, 136, 168);">Under the leadership of Jyoti Mukherjee, the founder and designer of STL’s eHorizon suites, Software Technologies Ltd has expanded <br> its product portfolio offering in software as a service (SaaS) and has spread to over 11 countries across Africa. Jyoti’s corporate <br> leadership and commitment to advance an entrepreneurial agenda to help organizations of all sizes manage their people, <br> processes and governance, efficiently through technology have been recognized locally and internationally. Thus earning her <br> these accolades:</p>
+    </div>
+   <!-- container 1 -->
+    <div class="container custom-container background-section">
+        <div class="row align-items-center">
+          <div class="col-md-6 position-relative">
+    
+<div class="bg-image">
+            <img src="gimages/bg demo.png" alt="Background" class="w-100"> 
+        </div>
+
+            <!-- Overlay image -->
+            <img src="gimages/trophy.png" alt="Overlay" class="position-absolute top-50 start-50 translate-middle w-123 h-300 ">
+          </div>
+          <div class="col-md-6">
+            <div class="text-block">
+              <h2>Timeless Woman of Wonder 2015</h2>
+              <p>The Timeless Women Conference provides a platform to link with other global leaders and change agents in an environment that is geared towards engaging and collaborating with all key stakeholders responsible for driving social and economic change in Africa and empower African Women through these channels to participate and scale up the social and economic growth for Africa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container 2 -->
+      <div class="container custom-container background-section">
+        <div class="row align-items-center">
+            <!-- Text Block on the Left -->
+            <div class="col-md-6">
+                <div class="text-block">
+                    <h2>Keynote Speaker at the 5th AIBUMA Conference 2014</h2>
+                    <p>The Top 100 Mid-Sized Companies Survey is an initiative of KPMG and the Nation Media Group. The survey seeks to celebrate business success among the country’s Mid-Sized Companies. Mid-sized companies are the drivers of the economy and employ the bulk of the workforce in Kenya. KPMG and Nation Media Group (NMG) strongly believe that there is a need to celebrate these entrepreneurs.</p>
+                </div>
+            </div>
+            <!-- Background Image with Overlay on Right -->
+            <div class="col-md-6 position-relative">
+                <div class="bg-image">
+                    <img src="gimages/bg demo.png" alt="Background" class="w-100"> 
+                </div>
+                <img src="gimages/2nd runners up.png" alt="Overlay" class="position-absolute top-50 start-50 translate-middle w-123 h-300">
+            </div>
+        </div>
+    </div>
+    <!-- ey entreprenuer container 3-->
+    <div class="container custom-container background-section">
+        <div class="row align-items-center">
+          <div class="col-md-6 position-relative">
+    
+<div class="bg-image">
+            <img src="gimages/bg demo.png" alt="Background" class="w-100"> 
+        </div>
+
+            <!-- Overlay image -->
+            <img src="gimages/EY-Entrepreneur.png" alt="Overlay" class="position-absolute top-50 start-50 translate-middle w-123 h-300 ">
+          </div>
+          <div class="col-md-6">
+            <div class="text-block">
+              <h2>EY Entrepreneur of the Year</h2>
+              <p>The Ernst & Young Entrepreneur of the Year Awards or EY Entrepreneur of the Year Awards is an award sponsored by Ernst & Young in recognition of entrepreneurship.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top ict section -->
+      <div class="container custom-container background-section">
+        <div class="row align-items-center">
+            <!-- Text Block on the Left -->
+            <div class="col-md-6">
+                <div class="text-block">
+                    <h2>Top ICT Business Woman 2007</h2>
+                    <p>The award is given to women who are making significant contributions to Africa’s Information Communication Technology (ICT) sector and occupy high profile positions in this fast-paced and sometimes cut-throat industry.</p>
+                </div>
+            </div>
+            <!-- Background Image with Overlay Image on the Right -->
+            <div class="col-md-6 position-relative">
+                <div class="bg-image">
+                    <img src="gimages/bg demo.png" alt="Background" class="w-100"> 
+                </div>
+                <img src="gimages/Top-ICT.png" alt="Overlay" class="position-absolute top-50 start-50 translate-middle w-123 h-300">
+            </div>
+        </div>
+    </div>
+    <!-- Kenya Top section -->
+    <div class="container custom-container background-section">
+        <div class="row align-items-center">
+          <div class="col-md-6 position-relative">
+    
+<div class="bg-image">
+            <img src="gimages/bg demo.png" alt="Background" class="w-100"> 
+        </div>
+
+            <!-- Overlay image -->
+            <img src="gimages/Kenya-Top-100-.png" alt="Overlay" class="position-absolute top-50 start-50 translate-middle w-123 h-300 ">
+          </div>
+          <div class="col-md-6">
+            <div class="text-block">
+              <h2>Kenya Top 100 Mid-Sized Companiesr</h2>
+              <p>Software Technologies Ltd has remained at the forefront of our businesses and has been progressively growing its market position in the industry. This is due to the fact that we understand how to use technology to change and innovate so as to deliver value to our clients.
+
+                Our local and international awards and recognition validates our pursuit of bringing simplicity to managing people, processes and governance. For ten consecutive years, STL has ranked in Kenya’s Top 100 companies, Top ICT Company in 2015 -16 and ‘Most Ranked Top 100 Participant over 10 Years’ in 2017.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- i am ready section -->
+      
+      <div class="bottom d-flex justify-content-center">
+        <div class="text-center" style="width: 90%;">
+            <h1>Ready to enhance board productivity and decision-making? Request a demo now_</h1>
+            <div class="button mt-3">
+                <button type="button" class="btn btn-danger btn-sm fs-3">I Am Ready</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="ft-top">
+        <div class="ft-rgt">
+            <a class="ft-logo" href="index.html">
+                <img src="gimages/logo1.JPG" alt="">
+            </a>
+            <h2>Download Our Apps</h2>
+
+            <a href="https://www.apple.com/app-store/"><button class="app-btn">
+                <img src="/gimages/ios.jpg" alt="">
+            </button></a>
+
+            <a href="https://play.google.com/store/apps?hl=en&gl=US&pli=1"><button class="app-btn">
+                <img src="gimages/android-store.jpg" alt="">
+            </button></a>
+        </div>
+
+        
+
+        <div class="ft-lft">
+            
+            <ul>
+                <h3 style="color: white;">Products</h3>
+                <a href="/pages/eboard.html">eHorizon eBoard </a><br>
+                <br>
+                <a href="/pages/eparl.html">eHorizon eParliament</a> <br>
+                <br>
+                <a href="/pages/hrms.html">eHorizon HRMS</a> <br>
+                <br>
+                <a href="/pages/hrms.html">eHorizon Maktaba</a> <br>
+            </ul>
+
+            <ul style="width: 10%;">
+                <h3 style="color: white;">Company</h3>
+                <a href="index.html">Home </a><br> 
+                <br>                         
+                <a href="/pages/about.html">About STL</a> <br>
+                <br>
+                <a href="/pages/contact.html">Contact us</a> <br>
+                <br>
+                <a href="/pages/security.html">Security </a><br>
+            </ul>
+
+            <ul style="width: 15%;">
+                <h3 style="color: white;">Discover</h3>
+                <a href="/pages/blog.html">Blog </a><br>
+                <br>
+                <a href="/pages/partners.html">Partners</a> <br>
+                <br>
+                <a href="/pages/csr.html">CSR </a><br>
+                <br>
+                <a href="/pages/career-opp.html">Career opportunities</a> <br>
+
+            </ul>
+            
+        </div>
+    </div>
+
+        <div class="ft-border">
+            <p class="ft-p"> &#169 1991-2024 Software Technologies Ltd. All rights
+                Reserved|Privacy Policy|Terms & Conditions
+            </p>
+            <div class="ft-icons">
+            <a class="icons"  href="https://ke.linkedin.com/"><img  src="img/in.jpg" alt=""></a>
+            <a class="icons" href="https://twitter.com/?lang=en"><img src="img/x.jpg" alt=""></a>
+            <a class="icons" href="https://www.facebook.com/"><img  src="img/fb.jpg" alt=""></a>
+        </div>
+    </div>
+
+    </footer>
