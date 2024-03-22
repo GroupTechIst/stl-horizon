@@ -59,19 +59,13 @@ body{
     transform: scale(0.8);
   }
 
-  .logo-link{
-    background-color: transparent;
-    width: 220px;
-    height: 120px;
-  }
+  
 
 
 .hd-img{
     display: inline-block;
     align-self: center;
     padding-right: 30%;
-    width: 217px;
-    height: 116px;
 }
 
 .hd-dropdown {
