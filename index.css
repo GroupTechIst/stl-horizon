@@ -59,6 +59,13 @@ body{
     transform: scale(0.8);
   }
 
+  .logo-link{
+    color: transparent;
+    background-color: transparent;
+    width: 30px;
+    height: 20px;
+  }
+
 
 .hd-img{
     display: inline-block;
