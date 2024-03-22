@@ -64,7 +64,8 @@ body{
     display: inline-block;
     align-self: center;
     padding-right: 30%;
-    z-index: 5;
+    width: 20px;
+    height: 10px;
 }
 
 .hd-dropdown {
