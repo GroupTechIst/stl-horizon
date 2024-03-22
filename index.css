@@ -19,7 +19,6 @@ body{
     border: none;
     border-color: black;
     padding: none;
-    background: rgb(0,0,0);
     background: linear-gradient(125deg, rgba(0,0,0,1) 0%, rgba(62,10,10,1) 76%, rgba(255,0,0,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
